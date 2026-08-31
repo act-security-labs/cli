@@ -1,10 +1,10 @@
 {
-  "name": "@cloud-copilot/cli",
+  "name": "@actsecurity/cli",
   "version": "0.2.66",
   "description": "A standardized library for CLI building TypeScript CLI applications",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cloud-copilot/cli.git"
+    "url": "git+https://github.com/act-security-labs/cli.git"
   },
   "exports": {
     ".": {
@@ -31,13 +31,14 @@
   "author": "David Kerber <dave@cloudcopilot.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cloud-copilot/cli/issues"
+    "url": "https://github.com/act-security-labs/cli/issues"
   },
-  "homepage": "https://github.com/cloud-copilot/cli#readme",
+  "homepage": "https://github.com/act-security-labs/cli#readme",
   "devDependencies": {
-    "@cloud-copilot/prettier-config": "^0.1.0",
+    "@actsecurity/prettier-config": "^0.1.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^12.0.6",
     "@semantic-release/npm": "^13.1.4",
@@ -48,7 +49,7 @@
     "typescript": "^5.7.2",
     "vitest": "^4.0.18"
   },
-  "prettier": "@cloud-copilot/prettier-config",
+  "prettier": "@actsecurity/prettier-config",
   "release": {
     "branches": [
       "main"
@@ -83,6 +84,12 @@
         "@semantic-release/npm",
         {
           "npmPublish": true
+        }
+      ],
+      [
+        "@semantic-release/exec",
+        {
+          "successCmd": "echo published=true >> $GITHUB_OUTPUT && echo version=${nextRelease.version} >> $GITHUB_OUTPUT && echo package_name=$(node -p \"require('./package.json').name\") >> $GITHUB_OUTPUT"
         }
       ],
       [
