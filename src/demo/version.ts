@@ -8,7 +8,7 @@ const run = async () => {
     {
       version: {
         currentVersion: '0.1.38',
-        checkForUpdates: '@cloud-copilot/cli'
+        checkForUpdates: '@actsecurity/cli'
       }
     }
   )

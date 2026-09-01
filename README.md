@@ -1,8 +1,8 @@
 # CLI
 
-[![NPM Version](https://img.shields.io/npm/v/@cloud-copilot/cli.svg?logo=nodedotjs)](https://www.npmjs.com/package/@cloud-copilot/cli) [![MIT License](https://img.shields.io/github/license/cloud-copilot/cli)](LICENSE.txt)
+[![NPM Version](https://img.shields.io/npm/v/@actsecurity/cli.svg?logo=nodedotjs)](https://www.npmjs.com/package/@actsecurity/cli) [![MIT License](https://img.shields.io/github/license/act-security-labs/cli)](LICENSE.txt)
 
-[![GuardDog](https://github.com/cloud-copilot/cli/actions/workflows/guarddog.yml/badge.svg)](https://github.com/cloud-copilot/cli/actions/workflows/guarddog.yml) [![Known Vulnerabilities](https://snyk.io/test/github/cloud-copilot/cli/badge.svg?targetFile=package.json&style=flat-square)](https://snyk.io/test/github/cloud-copilot/cli?targetFile=package.json)
+[![GuardDog](https://github.com/act-security-labs/cli/actions/workflows/guarddog.yml/badge.svg)](https://github.com/act-security-labs/cli/actions/workflows/guarddog.yml) [![Known Vulnerabilities](https://snyk.io/test/github/act-security-labs/cli/badge.svg?targetFile=package.json&style=flat-square)](https://snyk.io/test/github/act-security-labs/cli?targetFile=package.json)
 
 Utilities for standardizing working CLIs in Typescript.
 
@@ -62,7 +62,7 @@ import {
   booleanArgument,
   numberArgument,
   enumArgument
-} from '@cloud-copilot/cli'
+} from '@actsecurity/cli'
 
 const cli = await parseCliArguments(
   'my-command',
@@ -139,5 +139,5 @@ If the user provides `--help` a help message will be printed out with the availa
 ## Installation
 
 ```bash
-npm install @cloud-copilot/cli
+npm install @actsecurity/cli
 ```
