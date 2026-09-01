@@ -158,7 +158,7 @@ function readStdin(timeoutMs?: number): Promise<string>
 **Example:**
 
 ```typescript
-import { readStdin } from '@cloud-copilot/cli'
+import { readStdin } from '@actsecurity/cli'
 
 const input = await readStdin(5000) // 5 second timeout
 console.log('Received from stdin:', input)
@@ -214,7 +214,7 @@ The library provides detailed error messages and exits with appropriate codes:
 ### Custom Argument Implementation
 
 ```typescript
-import { Argument, ValidatedValues } from '@cloud-copilot/cli'
+import { Argument, ValidatedValues } from '@actsecurity/cli'
 
 const customArgument = (options: { description: string }): Argument<MyType> => ({
   description: options.description,

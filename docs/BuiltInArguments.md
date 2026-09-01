@@ -14,7 +14,7 @@ import {
   enumArgument,
   enumArrayArgument,
   mapArgument
-} from '@cloud-copilot/cli'
+} from '@actsecurity/cli'
 
 // String arguments
 stringArgument({

@@ -1,11 +1,11 @@
 # Getting Started
 
-This guide will walk you through creating your first CLI application with `@cloud-copilot/cli`.
+This guide will walk you through creating your first CLI application with `@actsecurity/cli`.
 
 ## Installation
 
 ```bash
-npm install @cloud-copilot/cli
+npm install @actsecurity/cli
 ```
 
 ## Your First CLI
@@ -17,7 +17,7 @@ Let's create a simple file processor CLI that demonstrates the core concepts.
 Create a new file `my-cli.ts`:
 
 ```typescript
-import { parseCliArguments, stringArgument, booleanArgument } from '@cloud-copilot/cli'
+import { parseCliArguments, stringArgument, booleanArgument } from '@actsecurity/cli'
 
 const cli = await parseCliArguments(
   'my-cli',
@@ -92,7 +92,7 @@ cli.args.verbose // boolean
 ### Step 5: Add Multiple Values
 
 ```typescript
-import { stringArrayArgument, numberArgument } from '@cloud-copilot/cli'
+import { stringArrayArgument, numberArgument } from '@actsecurity/cli'
 
 const cli = await parseCliArguments(
   'my-cli',

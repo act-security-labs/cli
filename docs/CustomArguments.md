@@ -5,7 +5,7 @@ You can create custom argument types with simple validation logic or complex beh
 ## Simple Single and Multiple Value Arguments
 
 ```typescript
-import { singleValueArgument, arrayValueArgument } from '@cloud-copilot/cli'
+import { singleValueArgument, arrayValueArgument } from '@actsecurity/cli'
 
 // Custom Date argument
 const dateArgument = singleValueArgument<Date>((rawValue) => {

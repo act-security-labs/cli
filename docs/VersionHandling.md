@@ -1,6 +1,6 @@
 # Version Handling
 
-This guide covers the sophisticated version handling capabilities of `@cloud-copilot/cli`, including automatic update checking and custom version logic.
+This guide covers the sophisticated version handling capabilities of `@actsecurity/cli`, including automatic update checking and custom version logic.
 
 ## Basic Version Information
 
@@ -29,7 +29,7 @@ my-app --version
 Load version information from your package.json file:
 
 ```typescript
-import { createPackageFileReader } from '@cloud-copilot/cli'
+import { createPackageFileReader } from '@actsecurity/cli'
 
 //Create a reader that can read files relative to the root of your project
 const relativeFileReader = createPackageFileReader(import.meta.url, 2)
@@ -51,7 +51,7 @@ const cli = await parseCliArguments(
 Or use a function for lazy loading:
 
 ```typescript
-import { createPackageFileReader } from '@cloud-copilot/cli'
+import { createPackageFileReader } from '@actsecurity/cli'
 
 
 

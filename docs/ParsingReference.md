@@ -1,6 +1,6 @@
 # Parsing Reference
 
-This document provides detailed information about how `@cloud-copilot/cli` parses command-line input.
+This document provides detailed information about how `@actsecurity/cli` parses command-line input.
 
 ## Command Structure
 
