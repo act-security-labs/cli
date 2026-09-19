@@ -1,3 +1,10 @@
+## [0.2.69](https://github.com/act-security-labs/cli/compare/v0.2.68...v0.2.69) (2026-09-19)
+
+
+### Bug Fixes
+
+* use updated dependency updater action ([3ecc0e1](https://github.com/act-security-labs/cli/commit/3ecc0e139ab9c875e0f50d45cadf5f489a1aec88))
+
 ## [0.2.68](https://github.com/act-security-labs/cli/compare/v0.2.67...v0.2.68) (2026-09-01)
 
 ## [0.2.67](https://github.com/act-security-labs/cli/compare/v0.2.66...v0.2.67) (2026-08-31)
