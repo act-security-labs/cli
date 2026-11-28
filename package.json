@@ -1,6 +1,6 @@
 {
   "name": "@actsecurity/cli",
-  "version": "0.2.81",
+  "version": "0.2.82",
   "description": "A standardized library for CLI building TypeScript CLI applications",
   "repository": {
     "type": "git",
